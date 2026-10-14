@@ -1,0 +1,14 @@
+{
+  "applinks": {
+    "apps": [],
+    "details": [
+      {
+        "appIDs": ["U8P92F62W9.com.bariscakmak.roamed"],
+        "components": [
+          { "/": "/invite/*", "comment": "Party invite links" },
+          { "/": "/join/*", "comment": "Party join links" }
+        ]
+      }
+    ]
+  }
+}
