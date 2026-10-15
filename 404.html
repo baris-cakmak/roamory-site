@@ -1,0 +1,13 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Roamory</title>
+<style>body{font-family:-apple-system,system-ui,sans-serif;max-width:640px;margin:0 auto;padding:16px;line-height:1.6;text-align:center}a.btn{display:inline-block;margin-top:16px;padding:12px 20px;border-radius:12px;background:#111;color:#fff;text-decoration:none}</style></head>
+<body><h1 id="t">Roamory</h1><p id="m">This page does not exist.</p><p id="a"></p>
+<script>
+var m = location.pathname.match(/\/party\/([A-Za-z0-9]{4,12})\/?$/);
+if (m) {
+  var code = m[1].toUpperCase(), app = "roamory://party/" + code;
+  document.getElementById("t").textContent = "Join the party " + code;
+  document.getElementById("m").textContent = "Open Roamory to join. If nothing happens, install the app first.";
+  document.getElementById("a").innerHTML = '<a class="btn" href="' + app + '">Open in Roamory</a>';
+  location.href = app;
+}
+</script></body></html>
