@@ -8,6 +8,7 @@ if (m) {
   document.getElementById("t").textContent = "Join the party " + code;
   document.getElementById("m").textContent = "Open Roamory to join. If nothing happens, install the app first.";
   document.getElementById("a").innerHTML = '<a class="btn" href="' + app + '">Open in Roamory</a>';
-  location.href = app;
+  // The invite page (/party/?code=CODE) opens the app or offers the App Store.
+  location.replace("../party/?code=" + code);
 }
 </script></body></html>
